@@ -1,0 +1,167 @@
+ body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+        }
+        header {
+            background: linear-gradient(90deg, #1b6f85, #2C2081, #6bd5da);
+            padding: 35px;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .logo {
+            max-width: 120px;
+            height: auto;
+            position: absolute;
+            top: 10px;
+            left: 10px;
+        }
+        h1 {
+            color: white;
+            font-size: 3rem;
+            margin: 0;
+        }
+
+        /* Navigation Bar */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    background-color: #150c54;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Navigation Links */
+nav a {
+    color: white; /* Link color */
+    text-decoration: none; /* No underline */
+    padding: 10px 10px; /* Padding for links */
+    transition: background-color 0.3s; /* Smooth transition */
+    font-size: 18px;
+}
+.nav-icons {
+    display: flex; /* Use flexbox to align items horizontally */
+    align-items: center; /* Center items vertically */
+}
+
+/* Cart Button Styles */
+.cart-button {
+    display: flex; /* Flexbox for alignment */
+    align-items: center; /* Center icon and text */
+    color: white; /* Text color */
+    text-decoration: none; /* No underline */
+    padding: 10px; /* Padding for the button */
+    border-radius: 5px; /* Rounded corners */
+    transition: background-color 0.3s; /* Smooth transition */
+}
+
+/* Icon Styles */
+.cart-button img {
+    width: 24px; /* Set a fixed width for the icon */
+    height: 24px; /* Set a fixed height for the icon */
+    margin-right: 5px; /* Space between icon and text */
+}
+
+/* Profile Button Styles */
+.profile-button {
+    display: flex; /* Flexbox for alignment */
+    align-items: center; /* Center icon and text */
+    color: white; /* Text color */
+    text-decoration: none; /* No underline */
+    padding: 10px; /* Padding for the button */
+    border-radius: 5px; /* Rounded corners */
+    transition: background-color 0.3s; /* Smooth transition */
+}
+
+/* Profile Icon Styles */
+.profile-button img {
+    width: 24px; /* Set a fixed width for the icon */
+    height: 24px; /* Set a fixed height for the icon */
+    margin-right: 5px; /* Space between icon and text */
+}
+
+/* Responsive Styles */
+@media (max-width: 600px) {
+    nav {
+        flex-direction: column; /* Stack items vertically */
+        align-items: center; /* Center items */
+    }
+
+    nav a {
+        margin: 10px 0; /* Adjust margin for vertical alignment */
+    }
+
+    .cart-button, .profile-button {
+        width: 100%; /* Full width for buttons */
+        padding: 12px; /* Adjust padding for touch targets */
+        text-align: left; /* Align text to the left */
+    }
+}
+
+/* Hover Effect */
+nav a:hover, .cart-button:hover, .profile-button:hover {
+    background-color: #555; /* Darker background on hover */
+}
+        .cart-container {
+            margin: 20px;
+        }
+        .cart-item {
+            background-color: white;
+            margin: 15px 0;
+            padding: 20px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .item-select {
+            transform: scale(1.5); /* Increase the size of the checkbox */
+            margin-right: 10px; /* Add some space between the checkbox and the item name */
+        }
+        .cart-item img {
+            width: 100px; /* Adjust size as needed */
+            height: auto;
+            margin-right: 20px;
+        }
+        .checkout-button {
+            background-color: #6cdbeb;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            font-size: 1.2rem;
+            margin-top: 20px;
+            display: block;
+            width: fit-content;
+        }
+        .checkout-button, .delete-button {
+            background-color: #3b5998; /* Example background color */
+            color: white; /* Text color */
+            border: none; /* Remove border */
+            padding: 10px 20px; /* Padding for the button */
+            font-size: 1rem; /* Font size */
+            cursor: pointer; /* Pointer cursor on hover */
+            border-radius: 5px; /* Rounded corners */
+            margin-top: 10px; /* Space above the button */
+        }
+        .checkout-button:hover, .delete-button:hover {
+            background-color: #2d4373; /* Darker shade on hover */
+        }
+        .total-price {
+            font-size: 1.5rem;
+            color: #094776;
+            margin-top: 30px;
+            font-weight: bold;
+            text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
+        }

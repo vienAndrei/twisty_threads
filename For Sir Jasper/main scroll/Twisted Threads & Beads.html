@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Adorable products just for you at Cute Shop! Explore our wide range of cute clothing, accessories, and stationery items.">
+    <title>Cute Online Store</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link href="mainScrollStylesheet.css" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Header Section -->
+    <section id="home">
+        <header>
+            <img src="c:\Users\Vien Andrei\Desktop\For Sir Jasper\main scroll\ShopLogo.png" alt="Store Logo" class="logo">
+            <h1>Twisted Threads & Beads</h1>
+        </header>
+    </section>
+
+    <!-- Store Background Image Section -->
+    <section class="store-background">
+        <video autoplay muted loop>
+            <source src="c:\Users\Vien Andrei\Desktop\For Sir Jasper\Other media\HomePagevid1.mp4">
+        </video>
+        <div>
+            <h2>Welcome to Twisted Threads & Beads!</h2>
+            <p>Adorable products just for you!</p>
+        </div>
+    </section>
+
+
+    <!-- Navigation Bar -->
+    <nav>
+        <div>
+            <a href="#home">Home</a>
+            <a href="#catalog">Catalog</a>
+            <a href="#reviews">Reviews</a>
+            <a href="#aboutus">About Us</a>
+        </div>
+        <div class="nav-icons">
+            <a href="c:\Users\Vien Andrei\Desktop\For Sir Jasper\Cart page\Cart1.html" class="cart-button">
+                <img src="c:\Users\Vien Andrei\Desktop\For Sir Jasper\Cart page\cart logo.png" alt="Cart">
+                <span style="display: none;">Cart</span>
+            </a>
+            <a href="profile.html" class="profile-button">
+                <img src="c:\Users\Vien Andrei\Desktop\For Sir Jasper\main scroll\profile logo.png" alt="Profile">
+                <span style="display: none;">Profile</span>
+            </a>
+        </div>
+    </nav>
+
+    <!-- Catalog Section -->
+    <section id="catalog" class="catalog">
+        <h2>Our Products</h2>
+        
+        <!-- Products -->
+        <div class="products" style="display: flex; flex-wrap: wrap; justify-content: space-around; padding: 20px;">
+
+            <div class="product-card">
+                <img src="c:\Users\Vien Andrei\Desktop\For Sir Jasper\Pictures for products\star lanyard.jpg" alt="Star Charms Lanyard">
+                <h3>Star Charms Lanyard</h3>
+                <p>Durable phone lanyard with star and bow charms, cute and functional.</p>
+                <p class="price">₱50</p>
+                <button onclick="addToCart('Phone Charms Lanyard', 50)">Add to Cart</button>
+            </div>
+
+        
+            <!-- Additional Phone Charms Lanyard -->
+            <div class="product-card">
+                <img src="c:\Users\Vien Andrei\Desktop\For Sir Jasper\Pictures for products\flower.jpg" alt="Flower Charms Lanyard">
+                <h3>Flower Charms Lanyard</h3>
+                <p>Durable phone lanyard with floral charms, a fun way to accesorize your phone</p>
+                <p class="price">₱20</p>
+                <button onclick="addToCart('Flower Phone Charm',20)">Add to Cart</button>
+            </div>
+
+
+            <!-- Crochet Headbands -->
+            <div class="product-card">
+                <img src="c:\Users\Vien Andrei\Desktop\For Sir Jasper\Pictures for products\headband crochet.jpg" alt="Crochet Headband" >
+                <h3>Crochet Headband</h3>
+                <p>Simple and cute handmade headband to go with your outfits</p>
+                <p class="price">₱180</p>
+                <button onclick="addToCart('Crochet Headband',180)">Add to Cart</button>
+            </div>
+
+            <!-- Additional Crochet Headbands -->
+            <div class="product-card">
+                <img src="c:\Users\Vien Andrei\Desktop\For Sir Jasper\Pictures for products\rainbow.jpg" alt="Rainbow Crochet Headband">
+                <h3>Rainbow Crochet Headband</h3>
+                <p>Cute Rainbow bow, crafted and crocheted to add a pop of color to any outfit</p>
+                <p class="price">₱180</p>
+                <button onclick="addToCart('Rainbow Crochet Headband',180)">Add to Cart</button>
+            </div>
+
+            <div class="product-card">
+                <img src="c:\Users\Vien Andrei\Desktop\For Sir Jasper\Pictures for products\pastel color.jpg" alt="Pastel Crochet Headband" >
+                <h3>Pastel Crochet Headband</h3>
+                <p>Cute pastel headband, for your soft girl vibes</p>
+                <p class="price">₱180</p>
+                <button onclick="addToCart('Pastel Crochet Headband',180)">Add to Cart</button>
+            </div>
+
+            <!-- Crochet Wallets -->
+            <div class="product-card">
+                <img src="c:\Users\Vien Andrei\Desktop\For Sir Jasper\Pictures for products\wallet.jpg" alt="Crochet Wallet" >
+                <h3>Crochet Wallet</h3>
+                <p>Soft yet durable, functional and cute wallet to hold your coins or trinkets</p>
+                <p class="price">₱200</p>
+                <button onclick="addToCart('Crochet Wallet',200)">Add to Cart</button>
+            </div>
+
+            <!-- Additional Crochet Wallets -->
+            <div class="product-card">
+                <img src="c:\Users\Vien Andrei\Desktop\For Sir Jasper\Pictures for products\flower wallet.jpg" alt="Floral Crochet Wallet">
+                <h3>Floral Crochet Wallet</h3>
+                <p>Adorable floral wallet to hold your coins or trinkets with style</p>
+                <p class="price">₱200</p>
+                <button onclick="addToCart('Floral Crochet Wallet',200)">Add to Cart</button>
+            </div>
+
+            <div class="product-card">
+                <img src="c:\Users\Vien Andrei\Desktop\For Sir Jasper\Pictures for products\vintage wallet.jpg" alt="Vintage Crochet Wallet">
+                <h3>Vintage Crochet Wallet</h3>
+                <p>Perfect for your vintage coquette aesthetic, functional and durable too</p>
+                <p class="price">₱200</p>
+                <button onclick="addToCart('Vintage Crochet Wallet',200)">Add to Cart</button>
+            </div>
+
+            <!-- Crochet Earrings -->
+            <div class="product-card" >
+                <img src="c:\Users\Vien Andrei\Desktop\For Sir Jasper\Pictures for products\flower earings.jpg" alt="Crochet Earrings">
+                <h3>Daisy Crochet Earrings</h3>
+                <p>Cheerful pair of daisy earring that is sure to bring Spring Vibes anywhere</p>
+                <p class="price">₱100</p>
+                <button onclick="addToCart('Crochet Earrings',100)" >Add to Cart</button>
+            </div>
+
+            <!-- Additional Crochet Earrings -->
+            <div class="product-card" >
+                <img src="c:\Users\Vien Andrei\Desktop\For Sir Jasper\Pictures for products\boho.jpg" alt="Boho Crochet Earrings">
+                <h3>Boho Crochet Earrings</h3>
+                <p>Stylish and chic earrings for your subterranean looks</p>
+                <p class="price">₱100</p>
+                <button onclick="addToCart('Boho Crochet Earrings',100)">Add to Cart</button>
+            </div>
+
+            <div class="product-card">
+                <img src="c:\Users\Vien Andrei\Desktop\For Sir Jasper\Pictures for products\heart.jpg" alt="Dangle Crochet Earrings" >
+                <h3>Heart Crochet Earrings</h3>
+                <p>Spread the love with these cute Heart Earrings</p>
+                <p class="price">₱50</p>
+                <button onclick="addToCart('Dangle Crochet Earrings',50)">Add to Cart</button>
+            </div>
+
+        </div>
+    </section>
+
+    <hr class="divider">
+
+
+    <!-- Reviews and Rating Section -->
+    <section id="reviews">
+        <h2>Reviews</h2>
+        <div class="testimony">
+            <p>
+                <span style="color: gold;">★</span>
+                <span style="color: gold;">★</span>
+                <span style="color: gold;">★</span>
+                <span style="color: gold;">★</span>
+                <span style="color: gold;">★</span> (5/5)
+            </div>
+            "I love the products from Twisted Threads & Beads! The quality is amazing, and they are so adorable!" - Emily R.</p>
+        </div>
+        <div class="testimony">
+            <p>
+                <span style="color: gold;">★</span>
+                <span style="color: gold;">★</span>
+                <span style="color: gold;">★</span>
+                <span style="color: gold;">★</span>
+                <span style="color: gold;">★</span> (5/5)
+            </div>
+                "beautiful items! Will definitely shop again!" - Sarah T.</p>
+        </div>
+        <div class="testimony">
+            <p>
+                <span style="color: gold;">★</span>
+                <span style="color: gold;">★</span>
+                <span style="color: gold;">★</span>
+                <span style="color: gold;">★</span>
+                <span style="color: gold;">★</span> (5/5)
+            </div>
+            "ajskdlajwiorujsiofjsijvnseopkaspodkd eflwjfiosjdf jseoijasjneigkfa werijwfoisjdfklsdmfsdf -Anonymous</p>
+        </div>
+        <div class="testimony">
+            <p>
+                <span style="color: gold;">★</span>
+                <span style="color: gold;">★</span>
+                <span style="color: gold;">★</span>
+                <span style="color: gold;">★</span>
+                <span style="color: rgb(114, 114, 114);">★</span> (4/5)
+            </div>
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit -orphan account</p>
+    </section>
+
+    <hr class="divider">
+
+
+
+ <!-- Information Description Section for site -->
+<section id="aboutus">
+    <div>
+        <div class="left-column">
+            <h2 class="about-us-heading">About Us</h2>
+            <p class="description-text">
+                Twisted Threads and Beads specializes in handmade crochet creations and quality beads. We offer unique, customizable crochet items and charms, such as accessories and lanyards, all crafted with care. Each product reflects our commitment to craftsmanship and quality, personalized to suit your needs.
+            </p>
+        </div>
+        <!-- Information Description Section for Employees-->
+        <div class="right-column"> 
+            <h3 class="owner-staff-heading">Discover the Owner and Staff!</h3>
+            <!-- Circular Icons with Links to Resume -->
+            <div class="circular-icons">
+                <a href="c:\Users\Vien Andrei\Desktop\For Sir Jasper\Individual HTML for resume\bacerdo_resume.html" target="_blank">
+                    <img src="c:\Users\Vien Andrei\Desktop\For Sir Jasper\pictures for staff and owner\Arabela Pic.jpg" alt="Owner">
+                </a>
+                <a href="c:\Users\Vien Andrei\Desktop\For Sir Jasper\Individual HTML for resume\Juan_resume.html" target="_blank">
+                    <img src="c:\Users\Vien Andrei\Desktop\For Sir Jasper\pictures for staff and owner\Donna Pic.jpg" alt="Staff">
+                </a>
+                <a href="c:\Users\Vien Andrei\Desktop\For Sir Jasper\Individual HTML for resume\Vien Resumee.html" target="_blank">
+                    <img src="c:\Users\Vien Andrei\Desktop\For Sir Jasper\pictures for staff and owner\Vien Pic.png" alt="Staff">
+                </a>
+            </div>
+        </div>
+    </div>
+     <!-- Links to Facebook page and email is unavailable as it does not exist yet -->
+    <p class="inquiry-text">If you have inquiries, please contact us on our Facebook page Twisted Threads & Beads or email us at twistedthreadandbeads@gmail.com</p>
+</section>
+
+
+<script>
+    function addToCart(productName, productPrice, productImage) {
+        // Get existing cart items from localStorage
+        let cartItems = JSON.parse(localStorage.getItem('cartItems')) || [];
+        
+        // Check if the item is already in the cart
+        const existingItem = cartItems.find(item => item.name === productName);
+        
+        if (existingItem) {
+            // If it exists, increase the quantity
+            existingItem.quantity++;
+        } else {
+            // If it doesn't exist, add it to the cart
+            cartItems.push({ name: productName, price: productPrice, quantity: 1, image: productImage });
+        }
+        
+        // Save updated cart back to localStorage
+        localStorage.setItem('cartItems', JSON.stringify(cartItems));
+        
+        alert(productName + " has been added to your cart!");
+    }
+</script>
+</body>
+</html>

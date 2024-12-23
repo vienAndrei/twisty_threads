@@ -1,0 +1,340 @@
+/* General Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f0d6;
+}
+
+/* Header Section */
+header {
+    background: linear-gradient(90deg, #1b6f85, #2C2081, #6bd5da);
+    padding: 35px;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+    max-width: 120px;
+    height: auto;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
+h1 {
+    color: white;
+    font-size: 3rem;
+    margin: 0;
+}
+
+/* Store Background Image Section */
+.store-background {
+    position: relative;
+    height: 500px;
+    overflow: hidden;
+    color: rgba(3, 3, 107, 0.782);
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    text-align: center; 
+}
+
+.store-background video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -1;
+    transform: translate(-50%, -50%);
+}
+
+.store-background h2 {
+    font-size: 3rem;
+    margin: 0;
+    text-shadow: 2px 2px 6px rgba(1, 1, 2, 0.782);
+}
+
+.store-background p {
+    font-size: 1.5rem;
+    margin: 10px 0;
+    text-shadow: 1px 1px 5px rgba(1, 1, 2, 0.782);
+}
+
+/* Navigation Bar */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    background-color: #150c54;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Navigation Links */
+nav a {
+    color: white; /* Link color */
+    text-decoration: none; /* No underline */
+    padding: 10px 10px; /* Padding for links */
+    transition: background-color 0.3s; /* Smooth transition */
+    font-size: 18px;
+}
+
+/* Nav Icons Container */
+.nav-icons {
+    display: flex; /* Use flexbox to align items horizontally */
+    align-items: center; /* Center items vertically */
+}
+
+/* Cart Button Styles */
+.cart-button {
+    display: flex; /* Flexbox for alignment */
+    align-items: center; /* Center icon and text */
+    color: white; /* Text color */
+    text-decoration: none; /* No underline */
+    padding: 10px; /* Padding for the button */
+    border-radius: 5px; /* Rounded corners */
+    transition: background-color 0.3s; /* Smooth transition */
+}
+
+/* Icon Styles */
+.cart-button img {
+    width: 24px; /* Set a fixed width for the icon */
+    height: 24px; /* Set a fixed height for the icon */
+    margin-right: 5px; /* Space between icon and text */
+}
+
+/* Profile Button Styles */
+.profile-button {
+    display: flex; /* Flexbox for alignment */
+    align-items: center; /* Center icon and text */
+    color: white; /* Text color */
+    text-decoration: none; /* No underline */
+    padding: 10px; /* Padding for the button */
+    border-radius: 5px; /* Rounded corners */
+    transition: background-color 0.3s; /* Smooth transition */
+}
+
+/* Profile Icon Styles */
+.profile-button img {
+    width: 24px; /* Set a fixed width for the icon */
+    height: 24px; /* Set a fixed height for the icon */
+    margin-right: 5px; /* Space between icon and text */
+}
+
+/* Responsive Styles */
+@media (max-width: 600px) {
+    nav {
+        flex-direction: column; /* Stack items vertically */
+        align-items: center; /* Center items */
+    }
+
+    nav a {
+        margin: 10px 0; /* Adjust margin for vertical alignment */
+    }
+
+    .cart-button, .profile-button {
+        width: 100%; /* Full width for buttons */
+        padding: 12px; /* Adjust padding for touch targets */
+        text-align: left; /* Align text to the left */
+    }
+}
+
+/* Hover Effect */
+nav a:hover, .cart-button:hover, .profile-button:hover {
+    background-color: #555; /* Darker background on hover */
+}
+
+/* Catalog Section */
+.catalog {
+    padding: 100px;
+    text-align: center;
+}
+
+.catalog h2 {
+    font-size: 2.5rem;
+    color: rgba(3, 3, 107, 0.782);
+    margin-bottom: 20px;
+}
+
+.products {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+/* Product Card Styles */
+.product-card {
+    background-color: white;
+    width: 250px;
+    margin: 15px;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    text-align: center;
+}
+
+.product-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.product-card h3 {
+    margin: 10px 0;
+    font-size: 1.5rem;
+    color: #6cdbeb;
+}
+
+.product-card p {
+    color: #411d39;
+    font-size: 0.8rem;
+}
+
+.product-card .price {
+    color: #a569bd;
+    font-size: 1.2rem;
+}
+
+.product-card button {
+    background-color: #6cdbeb;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+/* Reviews and Rating Section */
+#reviews {
+    padding: 50px;
+    text-align: center;
+}
+
+#reviews h2 {
+    font-size: 2.5rem;
+    color: #47145b;
+    margin-bottom: 20px;
+}
+
+.testimony {
+    font-size: 1.2rem;
+    color: #6cdbeb;
+    margin: 30px 0;
+}
+
+/* Footer Section */
+footer {
+    background-color: #150c54;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+footer p {
+    margin: 5px 0;
+}
+
+/* About Us Section */
+#aboutus {
+    padding: 40px;
+    text-align: center;
+}
+
+/* Flex Container */
+#aboutus > div {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+/* Left Column */
+.left-column {
+    text-align: left;
+    max-width: 50%;
+}
+
+/* Headings */
+.about-us-heading {
+    color: #1193a8;
+    font-size: 2.5rem;
+}
+
+.owner-staff-heading {
+    color: #410e29;
+}
+
+/* Description Text */
+.description-text {
+    font-size: 1.2rem;
+    color: #89CFF0;
+}
+
+/* Inquiry Text Style */
+.inquiry-text {
+    font-size: 0.9rem; /* Smaller font size */
+    color: #333; 
+    margin-top: 20px; 
+}
+
+/* Right Column */
+.right-column {
+    text-align: right;
+    max-width: 50%;
+}
+
+/* Circular Icons */
+.circular-icons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.circular-icons a {
+    display: inline-block;
+}
+
+.circular-icons img {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .products {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .product-card {
+        width: 90%; /* Make product cards take more width on smaller screens */
+    }
+
+    nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav a {
+        margin: 10px 0; /* Adjust margin for vertical alignment */
+    }
+}
+
